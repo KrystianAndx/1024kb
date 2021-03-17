@@ -51,5 +51,6 @@ public class Product {
     }
     public String toString() {
         return "Product { id: " + id + ", product name: " + productName + ", price: " + price + ", weight: " + weight + ", color: " + color + ", product count " + productCount + "}";
+
     }
 }
