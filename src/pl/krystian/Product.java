@@ -1,14 +1,14 @@
 package pl.krystian;
 
 public class Product {
-    private int id;
+    private Long id;
     private String productName;
-    private int price;
-    private int weight;
+    private Float price;
+    private Float weight;
     private String color;
     private int productCount;
 
-    public Product (int id, String productName, int price, int weight, String color, int productCount) {
+    public Product (Long id, String productName, Float price, Float weight, String color, int productCount) {
         this.id = id;
         this.productName = productName;
         this.price = price;
@@ -18,7 +18,7 @@ public class Product {
 
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -26,11 +26,11 @@ public class Product {
         return productName;
     }
 
-    public int getPrice() {
+    public Float getPrice() {
         return price;
     }
 
-    public int getWeight() {
+    public Float getWeight() {
         return weight;
     }
 
@@ -42,7 +42,7 @@ public class Product {
         return productCount;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
 
