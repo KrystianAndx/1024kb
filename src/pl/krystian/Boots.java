@@ -1,18 +1,22 @@
 package pl.krystian;
 
-public class Boots {
-    private String size;
+public class Boots extends Product{
+    private int size;
     private boolean isNaturalSkin;
 
-    public Boots (String size, boolean isNaturalSkin) {
+    public Boots (Long id, String productName, Float price, Float weight, String color, int productCount, int size, boolean isNaturalSkin) {
+        super(id, productName, price, weight, color, productCount);
         this.size = size;
         this.isNaturalSkin = isNaturalSkin;
     }
 
-    public String  getSize() {
+    public int  getSize() {
         return size;
     }
     public boolean getisNaturalSkin() {
         return isNaturalSkin;
+    }
+    public String toString() {
+        return super.toString() + "Boots {size " + size + ", is natural skin " + isNaturalSkin + "}";
     }
 }

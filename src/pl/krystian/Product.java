@@ -49,4 +49,7 @@ public class Product {
     public void setProductCount(int productCount) {
         this.productCount = productCount;
     }
+    public String toString() {
+        return "Product { id: " + id + ", product name: " + productName + ", price: " + price + ", weight: " + weight + ", color: " + color + ", product count " + productCount + "}";
+    }
 }
