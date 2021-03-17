@@ -1,6 +1,6 @@
 package pl.krystian;
 
-public class Cloth {
+public class Cloth extends Product{
     private String size;
     private String material;
 

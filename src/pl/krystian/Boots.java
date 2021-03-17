@@ -1,15 +1,15 @@
 package pl.krystian;
 
 public class Boots {
-    private int size;
+    private String size;
     private boolean isNaturalSkin;
 
-    public Boots (int size, boolean isNaturalSkin) {
+    public Boots (String size, boolean isNaturalSkin) {
         this.size = size;
         this.isNaturalSkin = isNaturalSkin;
     }
 
-    public int getSize() {
+    public String  getSize() {
         return size;
     }
     public boolean getisNaturalSkin() {
